@@ -1,0 +1,28 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About me",
+      "description": "This page includes some additional information about me. ",
+      "author": [],
+      "contents": "\r\nI am a senior Applied Math and Stats major at Macalester College. I am interested in data analytics specifically in the field of sports.\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-12-12T17:07:04-06:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Ty Bruckner",
+      "description": "This is my website!\n",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-12-12T17:07:04-06:00"
+    },
+    {
+      "path": "projects.html",
+      "title": "Projects",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-12-12T17:07:05-06:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}
