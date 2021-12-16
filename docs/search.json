@@ -6,7 +6,7 @@
       "description": "This page includes some additional information about me. ",
       "author": [],
       "contents": "\r\nI am a senior Applied Math and Stats major at Macalester College. I am interested in data analytics specifically in the field of sports.\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-12-12T17:48:45-06:00"
+      "last_modified": "2021-12-16T12:50:17-06:00"
     },
     {
       "path": "index.html",
@@ -14,14 +14,14 @@
       "description": "This is my website!\n",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-12-12T17:48:46-06:00"
+      "last_modified": "2021-12-16T12:50:18-06:00"
     },
     {
       "path": "projects.html",
       "title": "Projects",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-12-12T17:48:47-06:00"
+      "last_modified": "2021-12-16T12:50:19-06:00"
     }
   ],
   "collections": ["posts/posts.json"]

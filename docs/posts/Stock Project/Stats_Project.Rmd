@@ -1,0 +1,80 @@
+---
+title: "Stats_Project"
+author: "Nathan Gottlieb"
+date: "3/7/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+#knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(readr)
+library(tidyverse)
+library(lubridate)
+```
+
+
+```{r}
+spdata <- S_P_500_Data %>%
+  mutate(name = "sp")
+```
+
+```{r}
+Russell <- Russel_2000_Small_Cap %>%
+  mutate(name = "russ")
+```
+
+```{r}
+tenyr_note <- X10yr_note 
+```
+
+```{r}
+tenyr_note <-tenyr_note %>% 
+  mutate(close = as.numeric(gsub("[\\%,]", "", Close)))
+```
+
+```{r}
+both <- spdata %>%
+  left_join(Russell,
+            by = c("Date" = "Date" )) %>%
+  mutate(spclose = Close.x )%>%
+  mutate(russclose = Close.y) %>%
+  select(Date, spclose, russclose) %>%
+  pivot_longer(cols = -Date,
+               names_to = "Index" ,
+             values_to = "Close") 
+  
+```
+
+```{r}
+both %>%
+  ggplot(aes(x = mdy(Date), y = Close, color = Index))+
+  geom_line() +
+  theme_minimal()+
+  labs(title = "Large Cap vs Small Cap Data", x = "", y = "", color ="", caption = "The Black line represents COVID Shutdown") + 
+  geom_vline(xintercept = ymd("2020-03-09"))
+  
+```
+
+```{r}
+tenyr_note %>%
+  ggplot(aes(x= mdy(Date), y = close))+
+  geom_line(color = "darkgreen")+
+  theme_minimal()+
+  labs(title = "Treasury Note Interest Rate", x = "", y = "", color = "")
+```
+```{r}
+percent_both<- both %>% 
+  mutate(percent = Close/(if_else(Index == "spclose", 3257.85,1666.77))-1)
+```
+
+```{r}
+percent_both %>% 
+  ggplot(aes(x = mdy(Date), y = percent, color = Index)) +
+  geom_line() +
+  theme_minimal() +
+  geom_hline(yintercept = 0.0) +
+  geom_point(aes(x = mdy(12/4/20), y = 0.13544822))
+```

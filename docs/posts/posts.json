@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/",
+    "title": "Football Prediction App",
+    "description": "Bayes Project",
+    "author": [
+      {
+        "name": "Ty Bruckner",
+        "url": {}
+      }
+    ],
+    "date": "2021-12-07",
+    "categories": [],
+    "contents": "\r\nFootball Shiny App\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-12-16T12:49:56-06:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/Better Stock Project/",
     "title": "Affect of Covid-19 on the U.S. Stock Market",
     "description": "Stock Project",
