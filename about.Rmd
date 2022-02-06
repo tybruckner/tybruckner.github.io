@@ -1,11 +1,11 @@
 ---
 title: "About me"
 description: |
-  This page includes some additional information about me. 
+  ["C:\Users\Ty Bruckner\Documents\Ty Bruckner Resume 1.21.22.docx"] (Resume)
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-I am a senior Applied Math and Stats major at Macalester College. I am interested in data analytics specifically in the field of sports. 
+I am a senior Applied Math and Stats major at Macalester College. I am interested in data analytics specifically in the field of biostatistics and education. 

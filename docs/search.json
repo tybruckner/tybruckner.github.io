@@ -3,25 +3,25 @@
     {
       "path": "about.html",
       "title": "About me",
-      "description": "This page includes some additional information about me. ",
+      "description": "[\"C:\\Users\\Ty Bruckner\\Documents\\Ty Bruckner Resume 1.21.22.docx\"] (Resume)",
       "author": [],
-      "contents": "\r\nI am a senior Applied Math and Stats major at Macalester College. I am interested in data analytics specifically in the field of sports.\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-12-16T12:50:17-06:00"
+      "contents": "\r\nI am a senior Applied Math and Stats major at Macalester College. I am interested in data analytics specifically in the field of biostatistics and education.\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-02-06T12:00:54-06:00"
     },
     {
       "path": "index.html",
       "title": "Ty Bruckner",
-      "description": "This is my website!\n",
+      "description": "Projects from past courses at Macalester College\n",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-12-16T12:50:18-06:00"
+      "last_modified": "2022-02-06T12:00:55-06:00"
     },
     {
       "path": "projects.html",
       "title": "Projects",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-12-16T12:50:19-06:00"
+      "last_modified": "2022-02-06T12:00:55-06:00"
     }
   ],
   "collections": ["posts/posts.json"]
